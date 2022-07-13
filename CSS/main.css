@@ -28,6 +28,12 @@
 
 .prof-pic { grid-area: prof-pic; }
 
+#profilePic {
+    width:100%;
+    height:auto;
+    align-self: center;
+}
+
 .prof-info { grid-area: prof-info; }
 
 .posts {
