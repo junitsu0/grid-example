@@ -1,0 +1,39 @@
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 10vh 2fr 3fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "navbar navbar navbar navbar navbar navbar"
+      ". prof-pic prof-info prof-info prof-info ."
+      ". posts posts posts posts .";
+  }
+  
+.navbar {
+    grid-area: navbar;
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: sticky;
+    top: fixed;
+}
+
+.navbar > a {
+    color: white;
+    text-decoration: none;
+}
+
+.prof-pic { grid-area: prof-pic; }
+
+.prof-info { grid-area: prof-info; }
+
+.posts {
+    grid-area: posts;
+}
+
+.container > div{
+border: 2px solid black
+}
